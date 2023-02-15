@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <item
+        android:id="@+id/itComprar"
+        android:title="Comprar" />
+    <item
+        android:id="@+id/itCerrarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Cerrar Sesion" />
+    <item
+        android:id="@+id/itVentas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Venta" />
+    <item
+        android:id="@+id/itLista"
+        android:title="Lista de productos" />
+</menu>

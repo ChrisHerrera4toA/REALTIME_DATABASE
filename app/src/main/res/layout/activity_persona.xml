@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Persona">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Person">
+
+        <EditText
+            android:id="@+id/etcedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="185dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Ingrese cedula"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/etnombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etnombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="184dp"
+            android:layout_marginBottom="13dp"
+            android:ems="10"
+            android:hint="Ingrese nombre"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/rbhombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etcedula" />
+
+        <RadioButton
+            android:id="@+id/rbhombre"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="230dp"
+            android:text="Hombre"
+            app:layout_constraintBottom_toTopOf="@+id/rbmujer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etnombre" />
+
+        <RadioButton
+            android:id="@+id/rbmujer"
+            android:layout_width="153dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="233dp"
+            android:layout_marginBottom="16dp"
+            android:text="Mujer"
+            app:layout_constraintBottom_toTopOf="@+id/spinner2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rbhombre" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="177dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="209dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/etprovincia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rbmujer" />
+
+        <EditText
+            android:id="@+id/etprovincia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="186dp"
+            android:ems="10"
+            android:hint="Ingrese provincia"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="150pt"
+            android:layout_height="15pt"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="13dp"
+            android:hint="id p"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/btnactualizar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCorreo" />
+
+        <Button
+            android:id="@+id/btnactualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="212dp"
+            android:layout_marginBottom="3dp"
+            android:text="Actualizar"
+            app:layout_constraintBottom_toTopOf="@+id/btnSalir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvId" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:layout_marginEnd="231dp"
+            android:layout_marginBottom="168dp"
+            android:text="Salir"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCorreo"
+            android:layout_width="150pt"
+            android:layout_height="15pt"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="13dp"
+            android:hint="correo"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/tvId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etprovincia" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

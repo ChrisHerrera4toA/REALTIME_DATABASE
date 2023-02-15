@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Venta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etCodigoProductoVentas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ingrese codigo del producto"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnBuscarVentas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUSCAR" />
+
+        <TextView
+            android:id="@+id/tvNombreProductoVenta"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="nombre del producto" />
+
+        <TextView
+            android:id="@+id/tvStockVentas"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:hint="Stock" />
+
+        <TextView
+            android:id="@+id/tvPrecioVentas"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:hint="Precio de venta" />
+
+        <EditText
+            android:id="@+id/etCantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese cantidad"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tvTotalPagar"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:hint="Total a pagar:" />
+
+        <Button
+            android:id="@+id/btnTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TOTAL A PAGAR" />
+
+        <Button
+            android:id="@+id/btnFinalizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VENDER" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
